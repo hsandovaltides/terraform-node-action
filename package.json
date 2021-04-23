@@ -4,7 +4,8 @@
   "description": "Esta acción imprime \"Hello World\" o \"Hello\" + el nombre de una persona a quien saludar en el registro.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "cd wrapper && npm install"
   },
   "repository": {
     "type": "git",
@@ -19,6 +20,9 @@
   "homepage": "https://github.com/hsandovaltides/terraform-node-action#readme",
   "dependencies": {
     "@actions/core": "^1.1.0",
-    "@actions/github": "^1.1.0"
+    "@actions/github": "^1.1.0",
+    "@actions/io": "^1.1.0",
+    "@actions/tool-cache": "^1.6.1",
+    "@hashicorp/js-releases": "^1.2.1"
   }
 }
