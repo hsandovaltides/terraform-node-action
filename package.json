@@ -23,6 +23,7 @@
     "@actions/github": "^1.1.0",
     "@actions/io": "^1.1.0",
     "@actions/tool-cache": "^1.6.1",
-    "@hashicorp/js-releases": "^1.2.1"
+    "@hashicorp/js-releases": "^1.2.1",
+    "@types/semver": "^7.3.4"
   }
 }
