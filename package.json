@@ -4,7 +4,7 @@
   "description": "Esta acción imprime \"Hello World\" o \"Hello\" + el nombre de una persona a quien saludar en el registro.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "cd wrapper && npm test && cd .. && semistandard --env jest && jest --coverage",
     "build": "cd wrapper && npm run build && cd .. && ncc build index.js --out dist",
     "postinstall": "cd wrapper && npm install"
   },
