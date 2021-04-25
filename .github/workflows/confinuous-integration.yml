@@ -4,6 +4,7 @@ on:
   push:
     branches:
     - master
+    - ft-testnode
   pull_request:
 
 jobs:
