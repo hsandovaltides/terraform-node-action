@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "cd wrapper && npm run build && cd .. && ncc build index.js --out dist",
     "postinstall": "cd wrapper && npm install"
   },
   "repository": {
